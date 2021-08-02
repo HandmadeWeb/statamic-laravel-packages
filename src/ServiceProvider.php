@@ -47,7 +47,9 @@ class ServiceProvider extends AddonServiceProvider
 
             foreach ($this->laravelPackageProviders() as $provider => $value) {
                 if ($this->providerExists($provider) && $this->userHasPermission($value['name'])) {
-                    $children[] = $nav->item(Str::ucfirst($value['name']))->url($value['url']);
+                    if ($value['url'] !== '/') {
+                        $children[] = $nav->item(Str::ucfirst($value['name']))->url($value['url']);
+                    }
                 }
             }
 
