@@ -14,14 +14,39 @@ You can install the package via composer:
 composer require handmadeweb/statamic-laravel-packages
 ```
 
+Then you can assign permissions via Statamic which will be usable in the form of `can` / `cant`, `access laravel telescope` or (horizon, nova)
+
+Then just update the service provider for your chosen package
+
+`\App\Providers\TelescopeServiceProvider`
+```php
+    /**
+     * Register the Telescope gate.
+     *
+     * This gate determines who can access Telescope in non-local environments.
+     *
+     * @return void
+     */
+    protected function gate()
+    {
+        Gate::define('viewTelescope', function ($user) {
+            return $user->can('access laravel telescope');
+        });
+    }
+```
+
+And now you will be able to manage access via Statamic.
+
 ## Usage
 
 ### Permissions
+You'll be able to add permissions for each of the installed `Laravel Packages` in the Statamic control panel.
 
 ![Permissions](https://user-images.githubusercontent.com/54159303/127936231-da467d4f-fe8c-48fc-9a90-83f877e54af0.png)
 
 
 ### Control Panel
+Any package/links that the admin/user has permission to access (and is installed) will appear on the sidebar.
 
 ![Sidebar](https://user-images.githubusercontent.com/54159303/127936219-2f899699-5bca-4695-bf11-2888960e68b4.png)
 
