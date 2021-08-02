@@ -1,0 +1,32 @@
+{
+    "name": "handmadeweb/statamic-laravel-packages",
+    "license": "MIT",
+    "description": "",
+    "keywords": [
+        "statamic",
+        "statamic-addon",
+        "statamic-horizon",
+        "statamic-nova",
+        "statamic-telescope"
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "statamic/cms": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "HandmadeWeb\\StatamicLaravelPackages\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Laravel Packages",
+            "description": "Statamic Laravel Packages addon"
+        },
+        "laravel": {
+            "providers": [
+                "HandmadeWeb\\StatamicLaravelPackages\\ServiceProvider"
+            ]
+        }
+    }
+}
