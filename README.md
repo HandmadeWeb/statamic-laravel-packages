@@ -18,9 +18,12 @@ composer require handmadeweb/statamic-laravel-packages
 
 ### Permissions
 
+![Permissions](https://user-images.githubusercontent.com/54159303/127936231-da467d4f-fe8c-48fc-9a90-83f877e54af0.png)
+
 
 ### Control Panel
 
+![Sidebar](https://user-images.githubusercontent.com/54159303/127936219-2f899699-5bca-4695-bf11-2888960e68b4.png)
 
 ## Changelog
 
