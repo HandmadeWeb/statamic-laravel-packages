@@ -47,6 +47,7 @@ You'll be able to add permissions for each of the installed `Laravel Packages` i
 
 ### Control Panel
 Any package/links that the admin/user has permission to access (and is installed) will appear on the sidebar.
+
 ![Sidebar](https://user-images.githubusercontent.com/54159303/127937372-9ec5a9c1-903a-4df8-8b57-b98dd932d1c3.png)
 
 ## Changelog
