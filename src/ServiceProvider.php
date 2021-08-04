@@ -17,16 +17,16 @@ class ServiceProvider extends AddonServiceProvider
         $this->laravelPackageProviders = [
             \App\Providers\HorizonServiceProvider::class => [
                 'name' => 'horizon',
-                'url' =>  '/'.config('horizon.path'),
+                'url' =>  '/'.trim(config('horizon.path'), '/'),
             ],
             \App\Providers\NovaServiceProvider::class => [
                 'name' => 'nova',
-                'url' =>  '/'.config('nova.path'),
+                'url' =>  '/'.trim(config('nova.path'), '/'),
             ],
             // 'spark',
             \App\Providers\TelescopeServiceProvider::class => [
                 'name' => 'telescope',
-                'url' =>  '/'.config('telescope.path'),
+                'url' =>  '/'.trim(config('telescope.path'), '/'),
             ],
         ];
 
