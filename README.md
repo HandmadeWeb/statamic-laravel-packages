@@ -14,9 +14,9 @@ You can install the package via composer:
 composer require handmadeweb/statamic-laravel-packages
 ```
 
-Then you can assign permissions via Statamic which will be usable in the form of `can` / `cant`, `access laravel telescope` or (horizon, nova)
+Then you can assign permissions via Statamic which will be usable in the form of `can` / `cant`, `access laravel telescope`, `access laravel horizon` or `access laravel nova`
 
-Then just update the service provider for your chosen package
+Then just update the service provider for your chosen package, for example with Telescope we might use the following.
 
 `\App\Providers\TelescopeServiceProvider`
 ```php
