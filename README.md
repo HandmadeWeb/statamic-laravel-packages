@@ -66,4 +66,4 @@ Please see [CONTRIBUTING](https://github.com/handmadeweb/statamic-laravel-packag
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/handmadeweb/statamic-laravel-packages/blob/main/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/handmadeweb/statamic-laravel-packages/blob/main/LICENSE) for more information.
